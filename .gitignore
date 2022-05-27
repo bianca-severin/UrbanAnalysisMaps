@@ -1,2 +1,3 @@
-WaterWatch/bin/
-WaterWatch/obj/
+**/bin
+**/obj
+**/.vs
