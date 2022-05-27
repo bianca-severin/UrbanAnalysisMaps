@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\severin\\Documents\\Projects\\WaterWatch\\WaterWatch\\WaterWatch.csproj": {}
+    "D:\\C#\\C# Project\\WaterWatch\\WaterWatch\\WaterWatch\\WaterWatch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\severin\\Documents\\Projects\\WaterWatch\\WaterWatch\\WaterWatch.csproj": {
+    "D:\\C#\\C# Project\\WaterWatch\\WaterWatch\\WaterWatch\\WaterWatch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\severin\\Documents\\Projects\\WaterWatch\\WaterWatch\\WaterWatch.csproj",
+        "projectUniqueName": "D:\\C#\\C# Project\\WaterWatch\\WaterWatch\\WaterWatch\\WaterWatch.csproj",
         "projectName": "WaterWatch",
-        "projectPath": "C:\\Users\\severin\\Documents\\Projects\\WaterWatch\\WaterWatch\\WaterWatch.csproj",
-        "packagesPath": "C:\\Users\\severin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\severin\\Documents\\Projects\\WaterWatch\\WaterWatch\\obj\\",
+        "projectPath": "D:\\C#\\C# Project\\WaterWatch\\WaterWatch\\WaterWatch\\WaterWatch.csproj",
+        "packagesPath": "C:\\Users\\Bianca\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\C# Project\\WaterWatch\\WaterWatch\\WaterWatch\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\severin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bianca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -53,6 +53,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
