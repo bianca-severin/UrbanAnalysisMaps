@@ -1,3 +1,6 @@
 **/bin
 **/obj
 **/.vs
+/WaterWatch/.vs/WaterWatch/v17/.suo
+/WaterWatch/.vs/WaterWatch/DesignTimeBuild/.dtbcache.v2
+/WaterWatch/obj/project.nuget.cache
