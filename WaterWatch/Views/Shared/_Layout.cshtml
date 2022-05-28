@@ -15,27 +15,67 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
 </head>
-<body>
+<body class="hold-transition skin-green sidebar-mini">
     <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a class="logo" href="#" style="background: #1e282c;">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>W</b>W</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b style="color:green">WATER</b>WATCH</span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            
+        </header>
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+            
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">MAPS NAVIGATION</li>
+                    <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-globe"></i> <span>Maps</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-map"></i> Water Consumption (2017)</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
 
-    </div>
-    <header>
-       
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - WaterWatch - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <!-- Main content -->
+            <section class="content-fluid">
+                @RenderBody()
+            </section>
+            <!-- /.content -->
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    </div>
+    <!-- END OF WRAPPER -->
+    
+    <!-- Scripts -->
+    <script src="~/app/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+    $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <script th:src="~/app/bootstrap/dist/js/bootstrap.min.js}"></script>
+    <script th:src="~/app/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js}"></script>
+    <script th:src="~/app/jquery-slimscroll/jquery.slimscroll.min.js}"></script>
+    <script th:src="~/app/fastclick/lib/fastclick.js}"></script>
+    <script th:src="~/app/dist/js/adminlte.min.js}"></script>
+    <script th:src="~/app/dist/js/demo.js}"></script> 
+    
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
